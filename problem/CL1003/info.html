@@ -1,0 +1,78 @@
+<h2>题目描述</h2>
+<p>对于一个 $n$ 维的点 $a$，其坐标为 $ \{a_1, a_2, a_3, \dots, a_n \} $。现在，你有若干个 $n$ 维的点，在这些点中，有不少的点存在着连边，对于一个 $n$ 维的点 $u$ 和一个 $n$ 维的点 $v$，若这两点之间存在连边，则这一条边的边权为 $(\sum \limits _ {1 \le i, j \le n}  \max \{ u_i, v_j \} ) \times w$，其中 $w$ 已经给定。虽然点的数量是无限的，但这若干个点中，总共却只有 $m$ 条边。<br>现在，你要从一个 $n$ 维的点 $s$ 出发到达其所能够 <strong>直接或间接到达</strong> 的所有点的最短距离之和，形式化地，定义 $dis_i$ 表示 $s$ 到点 $i$ 的最短距离， 你需要求出 $\sum dis_i$。特别地，若两个点不联通，他们之间的距离定义为 $0$，且这两点不能够互相到达。<br>由于结果可能很大，你只需要输出这个结果模 $1000000007$ 的值。<br><strong>保证不同的点坐标一定不相同</strong></p>
+<h2>输入格式</h2>
+<p>第一行两个正整数 $n$ 和 $m$，表示维数和边数。<br>接下来 $m$ 行，每行 $2n + 1$ 个整数，前 $n$ 个整数表示点 $u$ 的坐标，接着 $n$ 个整数表示点 $v$ 的坐标，最后一个整数表示 $w$。<br>最后输入 $n$ 个整数，表示点 $s$ 的坐标。</p>
+<h2>输出格式</h2>
+<p>第一行输出一个整数 $ans$，表示答案。</p>
+<h2>样例 #1</h2>
+<h3>样例输入 #1</h3>
+<pre><code>1 3
+1 2 3
+2 3 4
+1 3 5
+1
+</code></pre>
+<h3>样例输出 #1</h3>
+<pre><code>21
+</code></pre>
+<h2>提示</h2>
+<h3>样例解释 #1</h3>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/jvx21hs9.png" alt=""><br>此时对于点 $1$，其到其他的最短路径如下：</p>
+<table>
+<thead>
+<tr>
+<th align="center">点</th>
+<th align="center">距离</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">$2$</td>
+<td align="center">$6$</td>
+</tr>
+<tr>
+<td align="center">$3$</td>
+<td align="center">$15$</td>
+</tr>
+</tbody></table>
+<p>故答案就是 $21$。   </p>
+<h3>数据规模与约定</h3>
+<table>
+<thead>
+<tr>
+<th align="center">$\texttt{subtask}$</th>
+<th align="center">$n$</th>
+<th align="center">$m$</th>
+<th align="center">$w$</th>
+<th align="center">$a_i$</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">$\texttt{subtask \#1}$</td>
+<td align="center">$= 1$</td>
+<td align="center">$\le 50000$</td>
+<td align="center">$\le 10$</td>
+<td align="center">$\le 100$</td>
+</tr>
+<tr>
+<td align="center">$\texttt{subtask \#2}$</td>
+<td align="center">$\le 4$</td>
+<td align="center">$\le 200000$</td>
+<td align="center">$\le 10$</td>
+<td align="center">$\le 100$</td>
+</tr>
+<tr>
+<td align="center">$\texttt{subtask \#3}$</td>
+<td align="center">$\le 5$</td>
+<td align="center">$\le 250000$</td>
+<td align="center">$= 0$</td>
+<td align="center">$\le 100$</td>
+</tr>
+<tr>
+<td align="center">$\texttt{subtask \#4}$</td>
+<td align="center">$\le 10$</td>
+<td align="center">$\le 5 \times 10 ^ 5$</td>
+<td align="center">$\le 10$</td>
+<td align="center">$\le 100$</td>
+</tr>
+</tbody></table>
+<p>对于 $100\%$ 的数据，$1 \le n \le 10, 1 \le m \le 5 \times 10 ^ 5, 1 \le w \le 10, 1 \le a_i \le 100$。</p>
