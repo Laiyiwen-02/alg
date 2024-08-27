@@ -4,7 +4,7 @@
     echo "<script> window.history.back(); </script>";
   }
 ?>
-<div class = "layui-panel" style = "width:50%;height:50%;top:20%;left:25%;">
+<div class = "layui-panel" style = "width:50%;height:50%;top:15%;left:25%;">
   <div class = "layui-card">
     <div class = "layui-card-header">
       <img class = "layui-nav-img" src = "https://cdn.luogu.com.cn/upload/usericon/833737.png">
@@ -48,10 +48,11 @@
       form.on("submit(formDemo)", function (data) {
         if (slider.isOk()) {
           // layer.msg(JSON.stringify(data.field));
+          return true;
         } else {
           layer.msg("请先通过滑块验证");
+          return false;
         }
-        return true;
       });
       <?php
         $flag = 0;
