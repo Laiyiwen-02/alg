@@ -7,7 +7,16 @@
     <link rel = "stylesheet" href = "https://use.sevencdn.com/npm/github-markdown-css@5.6.1/github-markdown-light.css">
     <link rel = "stylesheet" href = "/prism.css">
     <link rel="stylesheet" href="https://use.sevencdn.com/npm/katex@0.16.11/dist/katex.min.css">
-    
+    <style>
+      .editor {
+        resize: none;
+        font-family: monospace;
+        width: 100%;
+        max-width: 100%;
+        height: 300px;
+        overflow: auto;
+      }
+    </style>
   </head>
   <header>
     <div>
@@ -101,7 +110,7 @@
         method = "post">
         <textarea id = "h" name = "html" hidden></textarea>
         <div class = "layui-col-md6 layui-col-xs6">
-          <textarea id = "content" onkeyup = "mdConverter();" style = "resize: none; height: 300px; overflow: auto;font-family:monospace;" class = "layui-textarea"></textarea>
+          <textarea id = "content" onkeyup = "mdConverter();" class = "layui-textarea editor"></textarea>
         </div>
         <div class = "layui-col-md6 layui-col-xs6" style = "border: thin solid #fafafa; padding: 1%; height: 300px; overflow: auto;">
           <div id = "show" class = "markdown-body"></div>
@@ -118,7 +127,9 @@
       function mdConverter() {
         var md = document.getElementById("content").value;
         function trans(md) {
-            return md.replace(/\\/g, '\\\\');
+            md = md.replace(/\\/g, '\\\\');
+            md = md.replace(/\\\\\&/g, '\\\&');
+            return md;
         }
         md = trans(md);
         var view = marked.parse(md);

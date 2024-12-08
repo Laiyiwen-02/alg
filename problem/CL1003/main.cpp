@@ -1,5 +1,1 @@
-#include <bits/stdc++.h>
-using namespace std;
-int main() {
-    cout << 0 << endl;
-}
+1145141919810

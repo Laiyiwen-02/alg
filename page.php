@@ -11,6 +11,33 @@
         <i class="layui-icon layui-timeline-axis"></i>
         <div class="layui-timeline-content layui-text">
           <h3 class="layui-timeline-title">
+            2024年10月1日
+          </h3>
+          <p>
+            <b style = "color: red;">
+              祝贺我们的祖国母亲生日快乐！
+            </b>
+          </p>
+          <p>
+            OJ 的 UI 或将由 LayUI 转变为 ElementUI，目前正在考虑阶段，打算两个同时引入，以 LayUI 为主体，ElementUI 作为辅助。
+          </p>
+        </div>
+      </div>
+      <div class="layui-timeline-item">
+        <i class="layui-icon layui-timeline-axis"></i>
+        <div class="layui-timeline-content layui-text">
+          <h3 class="layui-timeline-title">
+            2024年8月31日
+          </h3>
+          <p>
+            目前已经明确了重构的方向，并且已经重构了一些页面，准备实行模块化加载，后续也将进行跟进，目前 OJ 的部分界面因为新的模块化加载并未成熟而无法及时更新消息，敬请谅解。
+          </p>
+        </div>
+      </div>
+      <div class="layui-timeline-item">
+        <i class="layui-icon layui-timeline-axis"></i>
+        <div class="layui-timeline-content layui-text">
+          <h3 class="layui-timeline-title">
             2024年7月31日
           </h3>
           <p>
@@ -21,6 +48,7 @@
               <li>
                 此外，由于 OJ 原本的代码过于混乱，我们将在 8 月份一步一步将整个 OJ 进行重写与重构，也方便之后我们将渲染 $\rm\LaTeX$ 时从 Mathjax 变为 KaTeX，来实现更快的渲染，并且目前我们的 markdown 编辑器已经上线，并且已经使用 KaTeX 进行渲染，我们也正在尝试一步一步将 Mathjax 剔除，变为 KaTeX，目前 CL1003 已经使用了 KaTeX 进行渲染，后续也将对更多题目进行 Mathjax $\to$ KaTeX 的转变
               </li>
+            </ul>
           </p>
         </div>
       </div>
@@ -66,8 +94,8 @@
           <p>
             <ul>v0.1.4版本预计将更新如下内容：
               <li>更多的题目(done on 2023.12.25)</li>
-              <li>用户名牌子</li>
-              <li>用户注册功能</li>
+              <li>用户名牌子(done on 2024.01.01)</li>
+              <li>用户注册功能(done on 2024.08.31)</li>
               <li>用户发布动态功能</li>
               <li>题目难度评级和算法标签(done on 2024.01.01)</li>
               <li>讨论区板块(done on 2024.01.01)</li>
