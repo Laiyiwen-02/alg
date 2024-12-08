@@ -2,7 +2,7 @@
 <html>
   <head>
     <title> CLOJ - 由一个 Oier 创建的OJ </title>
-    <link href = "https://s4.zstatic.net/ajax/libs/layui/2.9.14/css/layui.css" rel = "stylesheet">
+    <link href = "https://s4.zstatic.net/ajax/libs/layui/2.9.20/css/layui.css" rel = "stylesheet">
     <style>
       @font-face {
         font-family: ubuntu-bold;
@@ -163,9 +163,7 @@
                   <div class = "layui-col-md3">
                     <select>
                       <option>
-                        <p class="layui-text">
-                          C++
-                        </p>
+                         C++
                       </option>
                     </select>
                   </div>
@@ -215,6 +213,6 @@
         document.getElementById("demo").value = v;
       });
     </script>
-    <script src = "https://s4.zstatic.net/ajax/libs/layui/2.9.14/layui.js"></script>
+    <script src = "https://s4.zstatic.net/ajax/libs/layui/2.9.20/layui.js"></script>
   </body>
 </html>

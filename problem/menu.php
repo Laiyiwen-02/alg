@@ -1,6 +1,6 @@
 <head>
   <title> CLOJ - 由一个 Oier 创建的OJ </title>
-  <link href = "https://s4.zstatic.net/ajax/libs/layui/2.9.14/css/layui.css" rel = "stylesheet">
+  <link href = "https://s4.zstatic.net/ajax/libs/layui/2.9.20/css/layui.css" rel = "stylesheet">
   <link rel = "stylesheet" href = "https://use.sevencdn.com/npm/github-markdown-css@5.6.1/github-markdown-light.css">
   <link rel="stylesheet" href="https://use.sevencdn.com/npm/katex@0.16.11/dist/katex.min.css">
 </head>

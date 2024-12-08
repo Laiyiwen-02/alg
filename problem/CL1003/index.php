@@ -92,6 +92,6 @@
             "\\leq": "\\leqslant"
         }
         }); '></script>
-    <script src = "https://s4.zstatic.net/ajax/libs/layui/2.9.14/layui.js"></script>
+    <script src = "https://s4.zstatic.net/ajax/libs/layui/2.9.20/layui.js"></script>
   </body>
 </html>
