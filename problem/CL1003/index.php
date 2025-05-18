@@ -2,9 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <?php
-      include "../menu.php";
-    ?>
+    <?php include "../menu.php"; ?>
   </head>
   <body>
     <div class="layui-bg-gray" style="padding: 16px;">

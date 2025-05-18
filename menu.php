@@ -1,6 +1,5 @@
-<?php session_start(); ?>
 <title> CLOJ - 由一个 Oier 创建的OJ </title>
-<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/layui/2.9.14/css/layui.css" integrity="sha384-VTXLCpw/uZnb02aJp2OBOKiBTcjUNBR9XrBgwNPiGmS3tnREkD34n6avX1UW9L4H" crossorigin="anonymous">
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/layui/2.11.1/css/layui.css">
 <link rel = "stylesheet" href = "https://use.sevencdn.com/npm/github-markdown-css@5.6.1/github-markdown-light.css">
 <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/gh/laiyiwen-02/cdn@0.0.1/prism/prism.css">
 <div>

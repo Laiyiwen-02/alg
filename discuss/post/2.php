@@ -1,0 +1,3 @@
+<?php session_start();?><html><head><title>111</title><?php include "../../menu.php"; ?><link rel="stylesheet" href="https://use.sevencdn.com/npm/katex@0.16.11/dist/katex.min.css"></head><body><div class = "layui-panel markdown-body" style = "padding:2%; margin:2%;"><h1>111</h1>
+<p>$n$</p>
+</div><script src="https://use.sevencdn.com/npm/katex@0.16.11/dist/katex.min.js"></script><script src="https://use.sevencdn.com/npm/katex@0.16.11/dist/contrib/auto-render.min.js" onload = 'renderMathInElement(document.body, {delimiters: [{left: $$, right: $$, display: true}, {left: $, right: $, display: false} ], macros: {"\\geq": "\\geqslant", "\\leq": "\\leqslant" } }); '></script></body></html>

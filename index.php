@@ -1,8 +1,6 @@
-<?php include "./menu.php"; ?>
+<?php session_start(); ?>
 <html>
-  <head>
-    <link rel = "stylesheet" href = "../layui/dist/css/layui.css">
-  </head>
+  <?php include "./menu.php"; ?>
   <body>
     <div class = "layui-panel layui-anim layui-anim-down" style = "padding:2%; margin:2%;">
       <h1> 欢迎来到 CLOJ！</h1>
