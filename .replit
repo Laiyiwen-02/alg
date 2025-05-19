@@ -1,13 +1,11 @@
 run = "php -S 0.0.0.0:8000 -t ."
-
-entrypoint = "index.php"
-modules = ["nodejs-20"]
+modules = ["php-8.2", "nodejs-20", "web", "cpp-clang14"]
 
 [nix]
-channel = "stable-22_11"
+channel = "stable-24_05"
 
 [deployment]
-run = ["php", "-S", "0.0.0.0:8000", "-t", "."]
+run = ["sh", "-c", "node index.js"]
 deploymentTarget = "cloudrun"
 
 [[ports]]

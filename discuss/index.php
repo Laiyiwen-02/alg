@@ -9,12 +9,13 @@
     </div>
     <?php
       $posts = file("post/post.txt");
+      $posts = array_reverse($posts);
       foreach ($posts as $post) {
         $post = explode("$", $post);
         echo "<fieldset class='layui-elem-field' style = 'padding:2%; margin:2%;'>";
         echo "<legend><a href = 'post/".$post[1].".php'>".$post[0]."</a></legend>";
-        echo "<div class = 'layui-field-box' style = 'padding:2%;margin:2%;'><p>";
-        $st = file_get_contents("post/".$post[1].".md");
+        echo "<div class = 'layui-field-box'><p>";
+        $st = file_get_contents("post/".str_replace("\n", "", $post[1]).".md");
         echo substr($st, 0, 37);
         echo "</p></div>";
         echo "</fieldset>";
