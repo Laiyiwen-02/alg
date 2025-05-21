@@ -101,7 +101,7 @@
         <div class="layui-col-md8">
           <div class="layui-card layui-panel layui-anim layui-anim-down">
             <div class="layui-card-header">
-              <h1>
+              <h1 style = "font-family: ubuntu-bold ;">
                 [CLOI Round 1 T3] road
               </h1>
             </div>

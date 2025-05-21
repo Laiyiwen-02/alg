@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "markdown-palettes": "^0.4.13",
     "marked": "^14.0.0"
   }
 }
