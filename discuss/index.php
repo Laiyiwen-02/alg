@@ -16,7 +16,7 @@
         echo "<legend><a href = 'post/".$post[1].".php'>".$post[0]."</a></legend>";
         echo "<div class = 'layui-field-box'><p>";
         $st = file_get_contents("post/".str_replace("\n", "", $post[1]).".md");
-        echo substr($st, 0, 37);
+        echo substr($st, 0, 50);
         echo "</p></div>";
         echo "</fieldset>";
       }
