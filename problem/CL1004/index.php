@@ -1,4 +1,4 @@
-<?php include "../../menu.php"; ?>
+<?php session_start(); include "../../menu.php"; ?>
 <div class="layui-bg-gray" style="padding: 16px;">
   <div class="layui-row layui-col-space15">
     <div class="layui-col-md8">

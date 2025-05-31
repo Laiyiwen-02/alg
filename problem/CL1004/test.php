@@ -44,7 +44,8 @@ session_start();date_default_timezone_set('Asia/Shanghai');
       }
       $cnt = file("../../record-cnt.txt");
       $nm = "../../record/".($cnt[0] + 1).".php";
-      file_put_contents($nm, "<link rel = 'stylesheet' href = 'https://s4.zstatic.net/ajax/libs/layui/2.9.14/css/layui.css'>
+      file_put_contents($nm, "<?php session_start(); ?>
+      <?php include '../menu.php'; ?>
       <style>fieldset a {text-decoration:underline;color:#16aaaa;}</style>
       <fieldset class = 'layui-elem-field' style = 'padding:2%;margin:2%;'>
         <legend> 基本信息 </legend>

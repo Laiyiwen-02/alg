@@ -163,14 +163,7 @@
       table.on('row(record-list)', function(obj){
         var dt = obj.data; // 获取当前行数据
         // 显示 - 仅用于演示
-        layer.open({
-          type: 2,
-          title: 'record',
-          shadeClose: true,
-          maxmin: true, //开启最大化最小化按钮
-          area: ['80%', '80%'],
-          content: '/record/' + dt.id + '.php'
-        });
+        window.location.href = "record/" + dt.id + ".php";
         // 标注当前点击行的选中状态
         obj.setRowChecked({
           type: 'radio' // radio 单选模式；checkbox 复选模式

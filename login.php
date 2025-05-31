@@ -1,4 +1,5 @@
 <?php
+  session_start();
   include "menu.php";
   if(isset($_SESSION['user'])){
     echo "<script> window.history.back(); </script>";
